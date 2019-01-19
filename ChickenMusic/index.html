@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>chickenmusic</title>
+    <script>
+      mui.init({
+        keyEventBind: {
+          backbutton: true,
+          statusBarBackground: "#222"
+        }
+      });
+      var first = null;
+      mui.back = function () {
+        if (!first) {
+          first = new Date().getTime(); //记录第一次按下回退键的时间
+          mui.toast('在按一次退出应用'); //给出提示
+          history.go(-1) // 回退到上一个页面
+          setTimeout(function () {
+            first = null
+          }, 1000)
+        } else {
+          if (new Date().getTime() - first < 1000) {
+            plus.runtime.quit();
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

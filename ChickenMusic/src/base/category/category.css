@@ -1,0 +1,75 @@
+@import "../../common/css/icon.css";
+
+.category{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #222;
+}
+
+.title{
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #ffcd32;
+  z-index: 50;
+}
+
+.scroll{
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.back{
+  position: absolute;
+  top: 0;
+  left: 6px;
+  z-index: 50;
+}
+
+.icon-back{
+  display: block;
+  padding: 9px;
+  font-size: 16px;
+  color: #ffcd32;
+}
+
+table svg{
+  fill: #ffcd32;
+  vertical-align: middle;
+}
+table th{
+  color: #ffcd32;
+  font-size: 14px;
+}
+table td{
+  margin: 0;
+  text-align: center;
+  width: 25%;
+  padding: 10px 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+table{
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: #222;
+}
+
+.cate-enter-active, .cate-leave-active {
+  transition: all 0.3s;
+}
+
+.cate-enter, .cate-leave-to {
+  transform: translate3d(100%, 0, 0);
+}

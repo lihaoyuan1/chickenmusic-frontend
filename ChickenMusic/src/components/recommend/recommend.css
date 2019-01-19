@@ -1,0 +1,96 @@
+.recommend{
+  position: fixed;
+  top: 88px;
+  bottom: 0;
+  width: 100%;
+}
+
+.scroll-title{
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #ffcd32;
+}
+
+.recommend-content{
+  height: 100%;
+  overflow: hidden;
+}
+
+.recommend-wrapper{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.recommend-list ul{
+  padding: 0;
+  margin: 0;
+}
+
+.list-title {
+  height: 65px;
+  line-height: 65px;
+  font-size: 14px;
+  color: #ffcd32;
+  padding: 0 20px;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px 20px 20px;
+}
+
+.icon{
+  padding-right: 20px;
+  width: 70px;
+}
+
+.icon img{
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+}
+
+.text{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 20px;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.name{
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.desc{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.loading-container {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.img-box{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.icon-more{
+  float: right;
+}
+
+.loading-more{
+  width: 100%;
+}
